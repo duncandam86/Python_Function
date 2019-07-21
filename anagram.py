@@ -14,8 +14,7 @@ Any characters can be deleted from either of the strings.'''
 import string
 import numpy as np
 def anagram (a,b):
-    '''function to determine number of letters that need to be removed to make a,b anagram'''
-    total = 0
+    '''function to determine number of letters that need to be removed to make a,b anagram. a and b are strings of letters'''
     alphabet = list(string.ascii_lowercase)
     array_a = []
     array_b = []
@@ -25,9 +24,7 @@ def anagram (a,b):
         y = b.lower().count(letter)
         array_b.append(y)
     difference = abs(np.array(array_a) -  np.array(array_b)).sum()
-    print(abs(np.array(array_a) -  np.array(array_b)))
-    total += difference
-    print(total)
+    print(difference)
 
 a = 'CUNT'
 b = 'CANT'
