@@ -26,6 +26,6 @@ def anagram (a,b):
     difference = abs(np.array(array_a) -  np.array(array_b)).sum()
     print(difference)
 
-a = 'CUNT'
+a = 'CaNT'
 b = 'CANT'
 anagram(a,b)
